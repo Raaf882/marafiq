@@ -31,9 +31,9 @@
                   <label for="cource">cuorces</label>
 
                 <!-- event desc -->
-                <p class="title">وصف الحدث </p>
+                <p class="title">وصف الحدث </p><br>
 
-              <textarea name="eventDesc" id="eventDesc" cols="30" rows="3"></textarea>
+              <textarea name="eventDesc" id="eventDesc" cols="30" rows="3"></textarea><br>
               
                   <label for="cource">عدد الحضور تقريبا</label>
                 <select name="geustNo" >
