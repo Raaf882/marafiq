@@ -9,7 +9,11 @@
     <title>Payment</title>
 </head>
 
+
 <body>
+    @extends('header')
+
+
     <section>
         <div class="container payment">
             <h1>انهاء الحجز</h1>
