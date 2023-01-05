@@ -29,9 +29,15 @@
                 <!-- event desc -->
                 <p class="title">وصف الحدث </p>
 
-              <textarea name="eventDesc" id="eventDesc" cols="30" rows="10"></textarea>
-              <input type="number" id="guestNO" name="guestNO" value="guestNO">
+              <textarea name="eventDesc" id="eventDesc" cols="30" rows="3"></textarea>
+              
                   <label for="cource">عدد الحضور تقريبا</label>
+                <select name="geustNo" >
+                    <option value="over-20">Over 20</option>
+                    <option value="over-50">Over 50</option>
+                    <option value="over-100">Over 100</option>
+                    <option value="over-1000">Over 1000</option>
+                </select>
 
                 <!-- event time -->
                 <p class="title">الاوقات المتاحة </p>
