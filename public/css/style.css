@@ -6,7 +6,7 @@
             scroll-behavior: smooth;
             scroll-padding-top: 2rem;
             font-family: 'Cairo', sans-serif;  
-            background-color: #fff;
+          
         }
         /* Variables */
       
@@ -27,9 +27,9 @@
             color: var(--bg-color);
           
         }
-          /* .section-bg{
+          .section-bg{
            background-color: #FAFBFA;
-          } */
+          }
         section {
             padding: 5rem 2rem 3rem;
         }
