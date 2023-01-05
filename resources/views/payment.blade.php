@@ -9,7 +9,11 @@
     <title>Payment</title>
 </head>
 
+
 <body>
+    @extends('header')
+
+
     <section>
         <div class="container payment">
             <h1>انهاء الحجز</h1>
@@ -27,11 +31,17 @@
                   <label for="cource">cuorces</label>
 
                 <!-- event desc -->
-                <p class="title">وصف الحدث </p>
+                <p class="title">وصف الحدث </p><br>
 
-              <textarea name="eventDesc" id="eventDesc" cols="30" rows="10"></textarea>
-              <input type="number" id="guestNO" name="guestNO" value="guestNO">
+              <textarea name="eventDesc" id="eventDesc" cols="30" rows="3"></textarea><br>
+              
                   <label for="cource">عدد الحضور تقريبا</label>
+                <select name="geustNo" >
+                    <option value="over-20">أكثر من 20</option>
+                    <option value="over-50">أكثر من 50</option>
+                    <option value="over-100">أكثر من 100</option>
+                    <option value="over-1000">أكثر من 1000</option>
+                </select>
 
                 <!-- event time -->
                 <p class="title">الاوقات المتاحة </p>
