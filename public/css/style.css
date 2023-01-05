@@ -5,10 +5,11 @@
             box-sizing: border-box;
             scroll-behavior: smooth;
             scroll-padding-top: 2rem;
-            font-family: 'Cairo', sans-serif;
+            font-family: 'Cairo', sans-serif;  
+            background-color: #fff;
         }
         /* Variables */
-        
+      
          :root {
             --desc-color: #333333;
             --heading-color: #94B867;
@@ -24,9 +25,11 @@
         
         body {
             color: var(--bg-color);
-            background-color: var(--body-color);
+          
         }
-        
+          /* .section-bg{
+           background-color: #FAFBFA;
+          } */
         section {
             padding: 5rem 2rem 3rem;
         }
