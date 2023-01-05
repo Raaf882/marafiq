@@ -33,10 +33,10 @@
               
                   <label for="cource">عدد الحضور تقريبا</label>
                 <select name="geustNo" >
-                    <option value="over-20">Over 20</option>
-                    <option value="over-50">Over 50</option>
-                    <option value="over-100">Over 100</option>
-                    <option value="over-1000">Over 1000</option>
+                    <option value="over-20">أكثر من 20</option>
+                    <option value="over-50">أكثر من 50</option>
+                    <option value="over-100">أكثر من 100</option>
+                    <option value="over-1000">أكثر من 1000</option>
                 </select>
 
                 <!-- event time -->
