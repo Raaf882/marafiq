@@ -27,3 +27,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('home/peyment', [App\Http\Controllers\BuildingController::class, 'index'])->name('payment');
+Route::get('/show_building', function () {
+    return view('show_building');});
