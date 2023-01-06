@@ -262,7 +262,7 @@ h2 {
 #formContent {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
-    background: #fff;
+    background: #000;
     padding: 30px;
     width: 90%;
     max-width: 450px;
@@ -527,4 +527,10 @@ footer .container,footer section {
 
 footer h1 {
     color: #f6f6f6;
+}
+#logout-form{
+    background-color: #000;
+}
+.dropdown{
+    background-color: #000;
 }

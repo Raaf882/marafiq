@@ -16,7 +16,7 @@
         </ul>  
         <div class="acount-btn">
           @auth
-                        {{-- <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a> --}}
+                        <a href="{{ url('/') }}" class="btn text-sm text-gray-700 underline">Home</a>
                     @else
                         <a href="{{ route('login') }}" class="btn text-sm text-gray-700 underline">Login</a>
 
@@ -24,6 +24,7 @@
                             <a href="{{ route('register') }}" class=" btn ml-4 text-sm text-gray-700 underline">Register</a>
                         @endif
                     @endif
+
           
         </div>
     </div>
