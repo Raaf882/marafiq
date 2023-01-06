@@ -23,7 +23,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
+//Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\BuildingController::class, 'index'])->name('home');
-// Route::get('home/peyment', [App\Http\Controllers\BuildingController::class, 'index'])->name('payment');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('home/peyment', [App\Http\Controllers\BuildingController::class, 'index'])->name('payment');
