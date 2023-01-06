@@ -6,7 +6,7 @@
     <meta>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{asset("css/style.css")}}">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>مرافق</title>
 </head>
@@ -19,7 +19,7 @@
 
 
         <!-- home section -->
-        <section id="home section-bg" >
+        <section id="home" style="background-color: #FAFBFA;">
             <div class=" home container">
 
                 <div class="home-content">
@@ -35,7 +35,7 @@
 
         <script src="main.js"></script>
         <!-- about us -->
-        <section>
+        <section id="about">
             <div class="aboutUs container">
 
                 <div class="aboutUs-card">
@@ -51,7 +51,7 @@
             </div>
         </section>
         <!-- services -->
-        <section class=" section-bg">
+        <section id="service">
             <div class="services container">
                 <h1>نقدم لكم</h1>
                 <div class="services-cards">
@@ -73,20 +73,6 @@
             </div>
         </section>
     </body>
-    <footer>
-        <div class="footer container">
-            <h1>تواصل معنا</h1>
-            <div class="footer-content">
-                <div class="contacts">
-                    <div class="contact">+9665839504782</div>
-                    <div class="contact">+9665839504782</div>
-                    <div class="contact">+9665839504782</div>
-                    <div class="social-icons">
-                        kjfsg
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+@extends('footer')
 
 </html>
