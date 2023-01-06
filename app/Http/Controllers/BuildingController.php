@@ -25,7 +25,7 @@ class BuildingController extends Controller
      */
     public function create()
     {
-        //
+        return view ('cms');
     }
 
     /**
