@@ -82,7 +82,7 @@
                     <div class="contact">+9665839504782</div>
                     <div class="contact">+9665839504782</div>
                     <div class="social-icons">
-                        kjfsg
+                        
                     </div>
                 </div>
             </div>
