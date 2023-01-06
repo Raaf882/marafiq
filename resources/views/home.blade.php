@@ -73,24 +73,8 @@
             </div>
         </section>
     </body>
-<<<<<<< HEAD
-    <footer>
-        <div class="footer container">
-            <h1>تواصل معنا</h1>
-            <div class="footer-content">
-                <div class="contacts">
-                    <div class="contact">+9665839504782</div>
-                    <div class="contact">+9665839504782</div>
-                    <div class="contact">+9665839504782</div>
-                    <div class="social-icons">
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-=======
+    
 @extends('footer')
->>>>>>> 071fe94394a35abbefa250d5cd4af4a95b5592f1
+
 
 </html>
