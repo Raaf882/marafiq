@@ -29,7 +29,7 @@
                     </li>
                 @endif
             @else
-                <li class=" " style="display: flex; gapgit:1rem;">
+                <li class=" " style="display: flex; gap:1rem;">
                     <a id="" class=" btn nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                         {{ Auth::user()->name }}
                     </a>
