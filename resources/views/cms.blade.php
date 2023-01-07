@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    @extends('header')
     <section>
         <div class="container payment">
             <h1> انشاء مرفق</h1>
@@ -32,6 +33,10 @@
                 <p class="title">وصف  تفصيلي للمرفق </p><br>
 
                 <textarea name="roomDescdetails" id="roomDescdetails" cols="60" rows="6"></textarea><br><br>
+                 <label for="post">ارفاق صورة رئيسية</label> <input type="file" name="post" id="post">
+              
+                 <label for="images">ارفاق صور تفصيلية</label> <input type="file" name="images" id="images">
+              <br><br>
                 
                     <label for="cource">عدد الحضور تقريبا</label>
                   <select name="geustNo" >
@@ -43,11 +48,12 @@
 
                 <!-- event time -->
                 <p class="title">الاوقات المتاحة </p>
-                <input type="radio" id="morning" name="time" value="morning">
+           
+                <input type="checkbox" name="morning" id="morning" value="morning">
                   <label for="morning"> صباحا 8 - 2 ظهرا</label>
-                <input type="radio" id="evening" name="time" value="evening">
+                <input type="checkbox" id="evening" name="evening" value="evening">
                   <label for="evening"> صباحا 8 - 2 ظهرا</label>
-                <input type="radio" id="allday" name="time" value="allday">
+                <input type="checkbox" id="allday" name="allday" value="allday">
                   <label for="allday"> صباحا 8 - 2 ظهرا</label>
                   {{-- date time --}}
                     <p class="title">التواريخ المتاحة </p> 
