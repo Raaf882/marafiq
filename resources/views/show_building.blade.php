@@ -67,7 +67,7 @@
                         </div>
                     </div>
                     <div class="rooms-card card">
-                        <img src="/img/logo.png" alt="" class="rooms-img">
+                        <img src="{{asset("img/room2.jpg")}}" alt="" class="rooms-img">
                         <div class="rooms-desc">
                             <p class="title">القاعات</p>
                             <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                     <div class="rooms-card card">
-                        <img src="/img/logo.png" alt="" class="rooms-img">
+                        <img src="{{asset("img/room3.jpg")}}" alt="" class="rooms-img">
                         <div class="rooms-desc">
                             <p class="title">القاعات</p>
                             <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
@@ -83,7 +83,7 @@
                         </div>
                     </div>
                     <div class="rooms-card card">
-                        <img src="/img/logo.png" alt="" class="rooms-img">
+                        <img src="{{asset("img/room4.jpg")}}" alt="" class="rooms-img">
                         <div class="rooms-desc">
                             <p class="title">القاعات</p>
                             <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
@@ -91,7 +91,7 @@
                         </div>
                     </div>
                     <div class="rooms-card card ">
-                        <img src="/img/logo.png" alt="" class="rooms-img">
+                        <img src="{{asset("img/room5.jpg")}}" alt="" class="rooms-img">
                         <div class="rooms-desc">
                             <p class="title">القاعات</p>
                             <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                     <div class="rooms-card card">
-                        <img src="/img/logo.png" alt="" class="rooms-img">
+                        <img src="{{asset("img/IMG_9637.jpg")}}" alt="" class="rooms-img">
                         <div class="rooms-desc">
                             <p class="title">القاعات</p>
                             <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
