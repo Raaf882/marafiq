@@ -72,7 +72,8 @@
                 <a class="btn submit" href="{{url('/show_building')}}"> احجز الان</a>
             </div>
         </section>
+       
     </body>
-
-
+@extends('footer')
+   
 </html>

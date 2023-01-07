@@ -126,6 +126,8 @@
             left: 0;
             top: 0;
             z-index: 100;
+            background-color: var(--body-color);
+            transition: box-shadow .3s, background .4s;
         }
 
         .logo {
@@ -231,7 +233,7 @@
 
         .services-page--img {
             height: 350px;
-            background-color: #585656;
+            background-color: var(--section-color);
             border-radius: var(--border-radius);
 
         }
@@ -268,6 +270,11 @@
 
         .room-img {
             height: 200px;
+        }
+        .rooms-img{ 
+             border-radius: 7px;
+            padding: .75rem;
+          
         }
 
         .rooms-cards {
