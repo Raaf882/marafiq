@@ -23,7 +23,7 @@
                 <h1>خدمات مميزة</h1>
                 <div class="card services-page--card">
                     <div class="services-page--img">
-                        <img src="img/logo.png" alt="">
+                        <img src="{{asset("img/stage1.jpg")}}" alt="">
                     </div>
                     <div class="services-page--content">
                         <div class="services-page--desc">
@@ -38,7 +38,7 @@
                 </div>
                 <div class="card services-page--card">
                     <div class="services-page--img">
-                        <img src="img/logo.png" alt="">
+                        <img src="{{asset("img/stadium1.jpg")}}" alt="">
                     </div>
                     <div class="services-page--content">
                         <div class="services-page--desc">
@@ -59,7 +59,7 @@
                 <div class="rooms-cards">
 
                     <div class="rooms-card card">
-                        <img src="/img/logo.png" alt="" class="rooms-img">
+                        <img src="{{asset("img/room1.jpg")}}" alt="" class="rooms-img">
                         <div class="rooms-desc">
                             <p class="title">القاعات</p>
                             <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
