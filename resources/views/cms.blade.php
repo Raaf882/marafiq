@@ -13,32 +13,44 @@
     <section>
         <div class="container payment">
             <h1> انشاء مرفق</h1>
-            <form action="" method="post">
-                <!-- @csrf -->
-              
-                <p class="title">نوع المرفق</p>
+            <form action="{{route('create-building')}}" method="post" enctype="multipart/form-data">
+                 @csrf 
 
-                  <input type="radio" id="stage" name="roomType" >
+              
+                
+<input type="text" id="name" name="name" >
+                  <label for="name">اسم المرفق</label>
+
+
+                {{--   <input type="radio" id="stage" name="roomType" >
                   <label for="stage">المسرح</label>
 
                 <input type="radio" id="stidum" name="roomType">
                   <label for="stidum">الملعب</label>
                 <input type="radio" id="hall" name="stidum">
-                  <label for="hall">قاعة</label>
+                  <label for="hall">قاعة</label> --}}
 
                 <!-- event desc -->
-                <p class="title">وصف المرفق </p><br>
+             
 
-                <textarea name="roomDesc" id="roomtDesc" cols="60" rows="3"></textarea><br><br>
-                <p class="title">وصف  تفصيلي للمرفق </p><br>
+                <textarea name="description" id="description" cols="60" rows="3"></textarea><br><br>
+                  <label for="description">وصف المرفق</label>
 
-                <textarea name="roomDescdetails" id="roomDescdetails" cols="60" rows="6"></textarea><br><br>
-                 <label for="post">ارفاق صورة رئيسية</label> <input type="file" name="post" id="post">
-              
-                 <label for="images">ارفاق صور تفصيلية</label> <input type="file" name="images" id="images">
+                <textarea name="desc_details" id="desc_details" cols="60" rows="6"></textarea><br><br>
+                <label for="description">وصف تفصيلي المرفق</label>
+                
+                <input type="number" id="price" name="price">
+                <label for="price"><span>السعر</span></label>
+
+                <label>Choose Images</label>
+<input type="file"  name="image" >
+
+                <label>Choose Images</label>
+                <input type="file"  name="images" multiple>
+               
               <br><br>
                 
-                    <label for="cource">عدد الحضور تقريبا</label>
+                  {{--   <label for="cource">عدد الحضور تقريبا</label>
                   <select name="geustNo" >
                       <option value="over-20">أكثر من 20</option>
                       <option value="over-50">أكثر من 50</option>
@@ -56,9 +68,9 @@
                 <input type="checkbox" id="allday" name="allday" value="allday">
                   <label for="allday"> صباحا 8 - 2 ظهرا</label>
                   {{-- date time --}}
-                    <p class="title">التواريخ المتاحة </p> 
+                    {{-- <p class="title">التواريخ المتاحة </p> 
                     <input type="date" id="date" >
-                    <label for="date">اضافة تاريخ</label><br><br>
+                    <label for="date">اضافة تاريخ</label><br><br> --}} 
            <button type="submit" class="btn">اضافة مرفق</button>
             </form>
         </div>

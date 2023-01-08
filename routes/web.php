@@ -33,6 +33,7 @@ Route::get('/show_building', function () {
 
 
     //----------------------pages index route-------------------
+
     //Route::get('home/show_building', [BuildingController::class, 'showBuilding'])->name('show_building');
 
 
@@ -43,3 +44,5 @@ Route::get('/show_building', function () {
 
     //----- complate the revesation
     Route::get('/home/payment',function(){return view('payment');})->name('payment'); 
+
+    Route::get('home/show-building', [BuildingController::class, 'showBuilding'])->name('show_building');
