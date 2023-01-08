@@ -33,7 +33,7 @@ Route::get('/show_building', function () {
 
 
     //----------------------pages index route-------------------
-    Route::get('home/show-building', [BuildingController::class, 'showBuilding'])->name('show_building');
+    //Route::get('home/show_building', [BuildingController::class, 'showBuilding'])->name('show_building');
 
 
 
