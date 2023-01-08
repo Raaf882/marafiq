@@ -14,10 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Auth::routes();
 
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//Auth::routes();
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('home/peyment', [App\Http\Controllers\BuildingController::class, 'index'])->name('payment');
+Route::get('/show_building', function () {
+    return view('show_building');});
+
+    Route::get('/cms', [App\Http\Controllers\BuildingController::class, 'create'])->name('cms');
