@@ -24,7 +24,7 @@
                 <div class="home-content">
                     <h1 class="heading">مرافق للتأجير </h1>
                     <p class="title"><b>مساحات </b>استثنائية-لفعاليات حصرية </p>
-                    <a class="btn hover submit" href="{{url('/show_building')}}"> احجز الان</a>
+                    <a class="btn hover submit" href="{{url ('/show_building')}}"> احجز الان</a>
                 </div>
                 <div class="home-img">
                     <img src="img/home-img.png" alt="home image">

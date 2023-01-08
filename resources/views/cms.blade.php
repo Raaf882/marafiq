@@ -13,13 +13,11 @@
     <section>
         <div class="container payment">
             <h1> انشاء مرفق</h1>
-            <form action="{{route('create-building')}}" method="post" enctype="multipart/form-data">
+            <form action="{{route('store-data')}}" method="post" enctype="multipart/form-data">
                  @csrf 
-
-              
-                
-<input type="text" id="name" name="name" >
-                  <label for="name">اسم المرفق</label>
+                        <label for="name">اسم المرفق</label>  
+                       <input type="text" id="name" name="name" >
+       
 
 
                 {{--   <input type="radio" id="stage" name="roomType" >
@@ -42,11 +40,11 @@
                 <input type="number" id="price" name="price">
                 <label for="price"><span>السعر</span></label>
 
-                <label>Choose Images</label>
+                {{-- <label>Choose Images</label>
 <input type="file"  name="image" >
 
                 <label>Choose Images</label>
-                <input type="file"  name="images" multiple>
+                <input type="file"  name="images" multiple> --}}
                
               <br><br>
                 

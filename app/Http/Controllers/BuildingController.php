@@ -41,6 +41,7 @@ class BuildingController extends Controller
      */
     public function create()
     {
+        
         return view ('cms');
     }
 
@@ -52,7 +53,16 @@ class BuildingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
+        // dd($request->all());
+      $building = new Building();
+
+      $building->name=$request->name;
+      $building->description=$request->description;
+      $building->desc_details=$request->desc_details;
+      $building->price=$request->price;
+      $building->save();
+      return redirect()->back();
     }
 
     /**

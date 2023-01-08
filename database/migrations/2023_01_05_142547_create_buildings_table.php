@@ -19,8 +19,8 @@ class CreateBuildingsTable extends Migration
             $table->text('description');
             $table->LongText('desc_details');
             $table->float('price');
-            $table->unsignedBigInteger('building_id');
-            $table->foreign('building_id')->references('id')->on('users')->onDelete('cascade');
+ 
+            //$table->foreign('building_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }
