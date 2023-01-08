@@ -31,7 +31,7 @@
                   <label for="cource">cuorces</label>
 
                 <!-- event desc -->
-                <p class="title">وصف الحدث </p><br>
+                <p class="title">وصف الحدث </p>
 
               <textarea name="eventDesc" id="eventDesc" cols="30" rows="3"></textarea><br>
               

@@ -27,12 +27,13 @@
                     </div>
                     <div class="services-page--content">
                         <div class="services-page--desc">
+
                             <p class="title">المسرح</p>
                             <p class="desc">يستضيف المسرح احتفالاتكم وفعالياتكم بمرافق وخدمات تلبي دميع احتياجاتكم
                                 <br><span>خدمة اضافية لهذه الباقة(موقف سيارة )</span>
                             </p>
                         </div>
-                        <a href="" class="btn">تفاصيل اكثر</a>
+                        <a href="{{route('building-details')}}" class="btn">تفاصيل اكثر</a>
                     </div>
 
                 </div>
@@ -47,7 +48,7 @@
                                 <br><span>خدمة اضافية لهذه الباقة(موقف سيارة )</span>
                             </p>
                         </div>
-                        <a href="" class="btn">تفاصيل اكثر</a>
+                        <a href="{{route('building-details')}}" class="btn">تفاصيل اكثر</a>
                     </div>
 
                 </div>
@@ -63,7 +64,7 @@
                         <div class="rooms-desc">
                             <p class="title">القاعات</p>
                             <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
-                            <a href="" class="btn rooms-btn">تفاصيل اكثر</a>
+                            <a href="{{route('building-details')}}" class="btn rooms-btn">تفاصيل اكثر</a>
                         </div>
                     </div>
                     <div class="rooms-card card">
@@ -71,7 +72,7 @@
                         <div class="rooms-desc">
                             <p class="title">القاعات</p>
                             <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
-                            <a href="" class="btn rooms-btn">تفاصيل اكثر</a>
+                            <a href="{{route('building-details')}}" class="btn rooms-btn">تفاصيل اكثر</a>
                         </div>
                     </div>
                     <div class="rooms-card card">
@@ -79,7 +80,7 @@
                         <div class="rooms-desc">
                             <p class="title">القاعات</p>
                             <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
-                            <a href="" class="btn rooms-btn">تفاصيل اكثر</a>
+                            <a href="{{route('building-details')}}" class="btn rooms-btn">تفاصيل اكثر</a>
                         </div>
                     </div>
                     <div class="rooms-card card">
@@ -87,7 +88,7 @@
                         <div class="rooms-desc">
                             <p class="title">القاعات</p>
                             <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
-                            <a href="" class="btn rooms-btn">تفاصيل اكثر</a>
+                            <a href="{{route('building-details')}}" class="btn rooms-btn">تفاصيل اكثر</a>
                         </div>
                     </div>
                     <div class="rooms-card card ">
@@ -95,7 +96,7 @@
                         <div class="rooms-desc">
                             <p class="title">القاعات</p>
                             <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
-                            <a href="" class="btn rooms-btn">تفاصيل اكثر</a>
+                            <a href="{{route('building-details')}}" class="btn rooms-btn">تفاصيل اكثر</a>
                         </div>
                     </div>
                     <div class="rooms-card card">
@@ -103,7 +104,7 @@
                         <div class="rooms-desc">
                             <p class="title">القاعات</p>
                             <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
-                            <a href="" class="btn rooms-btn">تفاصيل اكثر</a>
+                            <a href="{{route('building-details')}}" class="btn rooms-btn">تفاصيل اكثر</a>
                         </div>
                     </div>
 
