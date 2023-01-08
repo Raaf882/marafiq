@@ -55,7 +55,7 @@
                                 <i class="ri-map-pin-fill">الموقع</i>
                                 <i class="ri-fullscreen-line">المساحة</i>
                             </div>
-                            <a class="btn submit" href=""> احجز الان</a>
+                            <a class="btn submit" href="{{route('payment')}}"> احجز الان</a>
                         </div>
                     </div>
                 </div>

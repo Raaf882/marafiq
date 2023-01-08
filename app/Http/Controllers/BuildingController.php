@@ -55,7 +55,7 @@ class BuildingController extends Controller
      */
     public function show(Building $building)
     {
-        //
+        return view('building-details', ['building' => $building]);
     }
 
     /**
