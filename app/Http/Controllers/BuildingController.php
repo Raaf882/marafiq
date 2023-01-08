@@ -11,7 +11,15 @@ class BuildingController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
+     * 
      */
+    public function showBuilding()
+    {
+        
+        return view ('show_building');
+    }
+ 
+    
     public function index()
     {
         

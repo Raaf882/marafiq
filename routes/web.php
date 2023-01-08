@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\BuildingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function() {
     return view('home');
 });
 
@@ -24,9 +24,13 @@ Auth::routes();
 
 //Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('home/peyment', [App\Http\Controllers\BuildingController::class, 'index'])->name('payment');
+Route::get('/home', [BuildingController::class, 'index'])->name('home');
+Route::get('home/peyment', [BuildingController::class, 'index'])->name('payment');
 Route::get('/show_building', function () {
     return view('show_building');});
 
-    Route::get('/cms', [App\Http\Controllers\BuildingController::class, 'create'])->name('cms');
+    Route::get('/cms', [BuildingController::class, 'create'])->name('cms');
+
+
+    //----------------------pages index route-------------------
+    Route::get('home/show-building', [BuildingController::class, 'showBuilding'])->name('show_building');
