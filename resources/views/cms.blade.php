@@ -40,11 +40,11 @@
                 <input type="number" id="price" name="price">
                 <label for="price"><span>السعر</span></label>
 
-                {{-- <label>Choose Images</label>
-<input type="file"  name="image" >
+                <label>Choose Images</label>
+                 <input type="file"  name="image" >
 
                 <label>Choose Images</label>
-                <input type="file"  name="images" multiple> --}}
+                <input type="file"  name="img" multiple>
                
               <br><br>
                 

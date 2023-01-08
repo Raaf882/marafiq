@@ -58,13 +58,13 @@
             <div class="rooms container">
                 <h1>مرافقنا</h1>
                 <div class="rooms-cards">
-                    @foreach($buildings as $building)
+                    @foreach($building as $room)
                     <div class="rooms-card card">
-                        <img src="{{asset("img/room1.jpg")}}" alt="" class="rooms-img">
+                        <img src="{{$room->image}}" alt="" class="rooms-img">
                         <div class="rooms-desc">
-                            <p class="title">{{$building->name}}</p>
-                            <p>{{$building->description}}<br><br></p>
-                            <a href="{{route('show-details',$building->id)}}" class="btn rooms-btn">تفاصيل اكثر</a>
+                            <p class="title">{{$room->name}}</p>
+                            <p>{{$room->description}}<br><br></p>
+                            <a href="{{route('show-details',$room->id)}}" class="btn rooms-btn">تفاصيل اكثر</a>
                         </div>
                     </div>
                     @endforeach

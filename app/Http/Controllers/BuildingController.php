@@ -51,6 +51,24 @@ class BuildingController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    public function saveImage(Request $request)
+    {
+
+        // dd($request->all());
+      $images = new Image();
+
+      
+      $images->image=$request->image;
+      $images->img=$request->img;
+
+
+
+
+
+      $images->save();
+      return redirect()->back();
+    }
+
     public function store(Request $request)
     {
 
@@ -61,6 +79,13 @@ class BuildingController extends Controller
       $building->description=$request->description;
       $building->desc_details=$request->desc_details;
       $building->price=$request->price;
+    //   $building->image=$request->image;
+    //   $building->img=$request->img;
+
+
+
+
+
       $building->save();
       return redirect()->back();
     }
