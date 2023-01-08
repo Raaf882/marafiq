@@ -47,3 +47,4 @@ Route::get('/show_building', function () {
 
     Route::get('home/show-building', [BuildingController::class, 'showBuilding'])->name('show_building');
     Route::post('/cms/store',[BuildingController::class,'store'])->name('store-data');
+    Route::get('/bulding-details/{id}', [BuildingController::class,'show'])->name('show-details');

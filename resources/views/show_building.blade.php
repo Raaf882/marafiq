@@ -64,7 +64,7 @@
                         <div class="rooms-desc">
                             <p class="title">{{$building->name}}</p>
                             <p>{{$building->description}}<br><br></p>
-                            <a href="" class="btn rooms-btn">تفاصيل اكثر</a>
+                            <a href="{{route('show-details',$building->id)}}" class="btn rooms-btn">تفاصيل اكثر</a>
                         </div>
                     </div>
                     @endforeach

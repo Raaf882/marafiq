@@ -23,8 +23,8 @@ class BuildingController extends Controller
      */
     public function showBuilding()
     {
-        
-        return view ('show_building');
+        $building= Building::all();
+        return view ('show_building',['buildings'=>$building]);
     }
  
     
@@ -73,6 +73,7 @@ class BuildingController extends Controller
      */
     public function show(Building $building)
     {
+        $building = Building::where('id', $building)->first();
         return view('building-details', ['building' => $building]);
     }
 
