@@ -15,6 +15,12 @@ class CreateBuildingsTable extends Migration
     {
         Schema::create('buildings', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->text('description');
+            $table->LongText('desc_details');
+            $table->float('price');
+            $table->unsignedBigInteger('building_id');
+            $table->foreign('building_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -35,3 +35,5 @@ Route::get('/show_building', function () {
 
     //----------------------pages index route-------------------
     Route::get('home/show-building', [BuildingController::class, 'showBuilding'])->name('show_building');
+
+    Route::post('cms',[BuildingController::class,'addBuilding'])->name('create-building');

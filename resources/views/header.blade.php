@@ -48,15 +48,7 @@
                 </li>
             @endguest
         </ul>
-        {{-- <div class="acount-btn">
-            @auth
-            <a class="btn" href="{{ route('login') }}">Login</a>
-
-            @if (Route::has('register'))
-                <a class="btn" href="{{ route('register') }}">Register</a>
-            @endif
-        @endif
-        </div> --}}
+       
     </div>
     
 </header>
