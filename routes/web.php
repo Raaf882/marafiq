@@ -25,7 +25,8 @@ Auth::routes();
 //Auth::routes();
 
 Route::get('/home', [BuildingController::class, 'index'])->name('home');
-Route::get('home/peyment', [BuildingController::class, 'index'])->name('payment');
+Route::get('/reservation', [BuildingController::class, 'showReservation'])->name('showReservation');
+Route::post('/reservation', [BuildingController::class, 'reservation'])->name('reservation');
 Route::get('/show_building', [BuildingController::class, 'showBuilding'])->name('show_building');
 
     Route::get('/cms', [BuildingController::class, 'create'])->name('cms');
@@ -42,7 +43,7 @@ Route::get('/show_building', [BuildingController::class, 'showBuilding'])->name(
     Route::get('/home/building-details',[BuildingController::class,'show'])->name('building-details');
 
     //----- complate the revesation
-    Route::get('/home/payment',function(){return view('payment');})->name('payment'); 
+   // Route::get('/home/payment',function(){return view('payment');})->name('payment'); 
 
     // Route::get('home/show-building', [BuildingController::class, 'showBuilding'])->name('show_building');
     Route::post('/cms/store',[BuildingController::class,'store'])->name('store-data');

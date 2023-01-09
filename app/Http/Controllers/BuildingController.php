@@ -6,6 +6,7 @@ use App\Models\Building;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Image;
+use App\Models\Reservation;
 
 
 class BuildingController extends Controller
@@ -25,6 +26,26 @@ class BuildingController extends Controller
     {
         $building= Building::all();
         return view ('show_building',['buildings'=>$building]);
+    }
+
+    public function showReservation(){
+        return view('reservation');
+
+    }
+
+    public function reservation(Request $request){
+                // dd($request->all());
+
+
+        $reservation = new reservation();
+        $reservation->event_type=$request->event_type;
+        $reservation->description=$request->description;
+        $reservation->desc_details=$request->desc_details;
+        $reservation->geust_NO=$request->geust_NO;
+        $reservation->pay_method=$request->pay_method;
+
+        $reservation->save();
+        return print('ok');
     }
  
     
