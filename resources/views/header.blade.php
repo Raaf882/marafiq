@@ -4,6 +4,8 @@
     <div class="navbar container">
         
         <a href="{{ url('/home') }}" class="logo text-sm text-gray-700 underline"> <img src="{{asset("img/logo.png")}}" alt="logo"></a>
+        
+        
         <ul>
             <li>
                 <a class="nav-item" href="{{route('home')}}">الرئيسية</a>

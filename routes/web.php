@@ -50,3 +50,4 @@ Route::get('/show_building', function () {
     Route::post('/cms/store',[BuildingController::class,'saveImage'])->name('store-data');
 
     Route::get('/bulding-details/{id}', [BuildingController::class,'show'])->name('show-details');
+   
