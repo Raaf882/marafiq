@@ -68,6 +68,11 @@
                                 </a>
                             @endif
                         </div>
+                        <div>
+                          <a class="btn btn-link" href="{{ route('register') }}">
+                            {{ __('  سجل حساب جديد') }}
+                        </a>
+                        </div>
                         <div class="col-md-6 offset-md-4">
                             
                         </div>
