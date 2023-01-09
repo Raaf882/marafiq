@@ -33,7 +33,7 @@
                                 <br><span>خدمة اضافية لهذه الباقة(موقف سيارة )</span>
                             </p>
                         </div>
-                        <a href="" class="btn">تفاصيل اكثر</a>
+                        <a href="{{route('building-details')}}" class="btn">تفاصيل اكثر</a>
                     </div>
 
                 </div>

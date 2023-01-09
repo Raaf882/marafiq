@@ -42,11 +42,13 @@
                                          document.getElementById('logout-form').submit();">
                             {{ __('خروج') }}
                         </a>
-
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="btn d-none">
                             @csrf
                         </form>
                     </div>
+                    {{-- <div class="" aria-labelledby="">
+                            <a href="{{route ('cms')}}" class="btn"> إنشاء مرفق</a> 
+                        </div> --}}
                 </li>
             @endguest
         </ul>

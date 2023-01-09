@@ -45,7 +45,7 @@ class BuildingController extends Controller
         $reservation->pay_method=$request->pay_method;
 
         $reservation->save();
-        return print('ok');
+        return redirect('show_building');
     }
  
     
