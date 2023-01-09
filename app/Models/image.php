@@ -9,10 +9,14 @@ use app\Models\Building;
 class image extends Model
 {
     use HasFactory;
+
+
     protected $fillable=[
-        'image',
-        'img',
+        'building_id',
+        'imageFile',
     ];
+
+
     public function building(){
         return $this->belongTo(Building::class);
     }

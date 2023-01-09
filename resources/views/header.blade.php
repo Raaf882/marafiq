@@ -12,7 +12,7 @@
             </li>
         
             <li>
-                <a class="nav-item" href="{{url('/show_building')}}">عرض المرافق</a>
+                <a class="nav-item" href="{{ route('show_building') }}">عرض المرافق</a>
             </li>
         
         </ul> 

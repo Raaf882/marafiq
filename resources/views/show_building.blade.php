@@ -37,30 +37,17 @@
                     </div>
 
                 </div>
-                <div class="card services-page--card">
-                    <div class="services-page--img">
-                        <img src="{{asset("img/stadium1.jpg")}}" alt="">
-                    </div>
-                    <div class="services-page--content">
-                        <div class="services-page--desc">
-                            <p class="title">المسرح</p>
-                            <p class="desc">يستضيف المسرح احتفالاتكم وفعالياتكم بمرافق وخدمات تلبي دميع احتياجاتكم
-                                <br><span>خدمة اضافية لهذه الباقة(موقف سيارة )</span>
-                            </p>
-                        </div>
-                        <a href="" class="btn">تفاصيل اكثر</a>
-                    </div>
-
-                </div>
+                
             </div>
         </section>
         <section>
             <div class="rooms container">
                 <h1>مرافقنا</h1>
                 <div class="rooms-cards">
-                    @foreach($building as $room)
+            
+                    @foreach($buildings as $room)
                     <div class="rooms-card card">
-                        <img src="{{$room->image}}" alt="" class="rooms-img">
+                        <img src="{{ asset('img/')."/".$room->image }}" alt="" class="rooms-img">
                         <div class="rooms-desc">
                             <p class="title">{{$room->name}}</p>
                             <p>{{$room->description}}<br><br></p>

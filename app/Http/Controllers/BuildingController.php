@@ -73,21 +73,40 @@ class BuildingController extends Controller
     {
 
         // dd($request->all());
+        if($request->hasFile('image'))
+        {
+            $singleImg = $request->image->hashName();
+            $request->image->move(public_path('img'), $singleImg);
+        }
+
+  
       $building = new Building();
 
       $building->name=$request->name;
       $building->description=$request->description;
       $building->desc_details=$request->desc_details;
       $building->price=$request->price;
-    //   $building->image=$request->image;
-    //   $building->img=$request->img;
+      $building->image=$singleImg;
 
-
-
-
-
+      
       $building->save();
-      return redirect()->back();
+
+      if($request->hasFile('img'))
+      {
+          foreach($request->file('img') as $file)
+          {
+              $name = $file->hashName();
+              $file->move(public_path('img'), $name);
+
+              $image = new Image();
+              $image->building_id= $building->id;
+              $image->imageFile= $name;
+              $image->save();
+ 
+          }
+      }
+
+      return redirect('show_building');
     }
 
     /**

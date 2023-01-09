@@ -25,7 +25,7 @@
                 <div class="home-content" data-aos="fade-down" data-aos-duration="2000">
                     <h1 class="heading">مرافق للتأجير </h1>
                     <p class="title"><b>مساحات </b>استثنائية-لفعاليات حصرية </p>
-                    <a class="btn hover submit" href="{{url ('/show_building')}}"> احجز الان</a>
+                    <a class="btn hover submit" href="{{ route('show_building') }}"> احجز الان</a>
                 </div>
                 <div class="home-img" data-aos="fade-up" data-aos-duration="2000">
                     <img src="img/home-img.png" alt="home image">
@@ -43,7 +43,7 @@
                     <p>نقدم العديد من المرافق المتنوعة والحديثة المتاحة للحجز والاستئجار اصنعوا مساحاتكم هنا حيث نضمن
                         راحتكم مع العديد من الخدمات </p>
 
-                    <a class="btn hover submit" href="{{url ('/show_building')}}"> احجز الان</a>
+                    <a class="btn hover submit" href="{{ route('show_building') }}"> احجز الان</a>
                 </div>
                 <div class="video-card card" data-aos="fade-up-right" data-aos-duration="2000">
                     <img src="/img/logo.png" alt="">
@@ -70,7 +70,7 @@
                 </div>
                 <p class="title"data-aos="fade-up"data-aos-duration="3000">مرافق عالمية لأفكار استثنائية</p>
             
-                <a class="btn submit" href="{{url('/show_building')}}"> احجز الان</a>
+                <a class="btn submit" href="{{ route('show_building') }}"> احجز الان</a>
             </div>
         </section>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

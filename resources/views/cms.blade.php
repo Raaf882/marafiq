@@ -44,7 +44,7 @@
                  <input type="file"  name="image" >
 
                 <label>Choose Images</label>
-                <input type="file"  name="img" multiple>
+                <input type="file"  name="img[]" multiple>
                
               <br><br>
                 
