@@ -74,6 +74,11 @@
                                     {{ __('تسجيل') }}
                                 </button>
                         </div>
+                        <div>
+                          <a class="btn btn-link" href="{{ route('login') }}">
+                            {{ __('لديك حساب بالفعل؟') }}
+                        </a>
+                        </div>
                     </form>
 
                 </div>

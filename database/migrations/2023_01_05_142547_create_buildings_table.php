@@ -22,6 +22,7 @@ class CreateBuildingsTable extends Migration
             $table->string('image');
             //$table->foreign('building_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
+            
         });
     }
 
