@@ -26,14 +26,14 @@ Auth::routes();
 
 Route::get('/home', [BuildingController::class, 'index'])->name('home');
 Route::get('home/peyment', [BuildingController::class, 'index'])->name('payment');
-Route::get('/show_building', function () {
-    return view('show_building');});
+Route::get('/show_building', [BuildingController::class, 'showBuilding'])->name('show_building');
 
     Route::get('/cms', [BuildingController::class, 'create'])->name('cms');
 
 
     //----------------------pages index route-------------------
-    Route::get('home/show-building', [BuildingController::class, 'showBuilding'])->name('show_building');
+
+    //Route::get('home/show_building', [BuildingController::class, 'showBuilding'])->name('show_building');
 
 
 
@@ -43,3 +43,10 @@ Route::get('/show_building', function () {
 
     //----- complate the revesation
     Route::get('/home/payment',function(){return view('payment');})->name('payment'); 
+
+    // Route::get('home/show-building', [BuildingController::class, 'showBuilding'])->name('show_building');
+    Route::post('/cms/store',[BuildingController::class,'store'])->name('store-data');
+    // Route::post('/cms/store',[BuildingController::class,'saveImage'])->name('store-data');
+
+    Route::get('/bulding-details/{id}', [BuildingController::class,'show'])->name('show-details');
+   

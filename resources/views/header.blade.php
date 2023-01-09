@@ -4,13 +4,15 @@
     <div class="navbar container">
         
         <a href="{{ url('/home') }}" class="logo text-sm text-gray-700 underline"> <img src="{{asset("img/logo.png")}}" alt="logo"></a>
+        
+        
         <ul>
             <li>
                 <a class="nav-item" href="{{route('home')}}">الرئيسية</a>
             </li>
         
             <li>
-                <a class="nav-item" href="{{route('show_building')}}">عرض المرافق</a>
+                <a class="nav-item" href="{{ route('show_building') }}">عرض المرافق</a>
             </li>
         
         </ul> 
@@ -48,15 +50,7 @@
                 </li>
             @endguest
         </ul>
-        {{-- <div class="acount-btn">
-            @auth
-            <a class="btn" href="{{ route('login') }}">Login</a>
-
-            @if (Route::has('register'))
-                <a class="btn" href="{{ route('register') }}">Register</a>
-            @endif
-        @endif
-        </div> --}}
+       
     </div>
     
 </header>

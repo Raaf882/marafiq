@@ -4,9 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\Building;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Models\Image;
+
 
 class BuildingController extends Controller
 {
+   
+
+
+
+
     /**
      * Display a listing of the resource.
      *
@@ -15,8 +23,8 @@ class BuildingController extends Controller
      */
     public function showBuilding()
     {
-        
-        return view ('show_building');
+        $building= Building::all();
+        return view ('show_building',['buildings'=>$building]);
     }
  
     
@@ -33,6 +41,7 @@ class BuildingController extends Controller
      */
     public function create()
     {
+        
         return view ('cms');
     }
 
@@ -42,9 +51,62 @@ class BuildingController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    public function saveImage(Request $request)
+    {
+
+        // dd($request->all());
+      $images = new Image();
+
+      
+      $images->image=$request->image;
+      $images->img=$request->img;
+
+
+
+
+
+      $images->save();
+      return redirect()->back();
+    }
+
     public function store(Request $request)
     {
-        //
+
+        // dd($request->all());
+        if($request->hasFile('image'))
+        {
+            $singleImg = $request->image->hashName();
+            $request->image->move(public_path('img'), $singleImg);
+        }
+
+  
+      $building = new Building();
+
+      $building->name=$request->name;
+      $building->description=$request->description;
+      $building->desc_details=$request->desc_details;
+      $building->price=$request->price;
+      $building->image=$singleImg;
+
+      
+      $building->save();
+
+      if($request->hasFile('img'))
+      {
+          foreach($request->file('img') as $file)
+          {
+              $name = $file->hashName();
+              $file->move(public_path('img'), $name);
+
+              $image = new Image();
+              $image->building_id= $building->id;
+              $image->imageFile= $name;
+              $image->save();
+ 
+          }
+      }
+
+      return redirect('show_building');
     }
 
     /**
@@ -53,8 +115,9 @@ class BuildingController extends Controller
      * @param  \App\Models\Building  $building
      * @return \Illuminate\Http\Response
      */
-    public function show(Building $building)
+    public function show($building)
     {
+        $building = Building::with('images')->where('id', $building)->first();
         return view('building-details', ['building' => $building]);
     }
 

@@ -28,85 +28,34 @@
                     <div class="services-page--content">
                         <div class="services-page--desc">
 
-                            <p class="title">المسرح</p>
+                            <p class="title"></p>
                             <p class="desc">يستضيف المسرح احتفالاتكم وفعالياتكم بمرافق وخدمات تلبي دميع احتياجاتكم
                                 <br><span>خدمة اضافية لهذه الباقة(موقف سيارة )</span>
                             </p>
                         </div>
-                        <a href="{{route('building-details')}}" class="btn">تفاصيل اكثر</a>
+                        <a href="" class="btn">تفاصيل اكثر</a>
                     </div>
 
                 </div>
-                <div class="card services-page--card">
-                    <div class="services-page--img">
-                        <img src="{{asset("img/stadium1.jpg")}}" alt="">
-                    </div>
-                    <div class="services-page--content">
-                        <div class="services-page--desc">
-                            <p class="title">المسرح</p>
-                            <p class="desc">يستضيف المسرح احتفالاتكم وفعالياتكم بمرافق وخدمات تلبي دميع احتياجاتكم
-                                <br><span>خدمة اضافية لهذه الباقة(موقف سيارة )</span>
-                            </p>
-                        </div>
-                        <a href="{{route('building-details')}}" class="btn">تفاصيل اكثر</a>
-                    </div>
-
-                </div>
+                
             </div>
         </section>
         <section>
             <div class="rooms container">
                 <h1>مرافقنا</h1>
                 <div class="rooms-cards">
-
+            
+                    @foreach($buildings as $room)
                     <div class="rooms-card card">
-                        <img src="{{asset("img/room1.jpg")}}" alt="" class="rooms-img">
+                        <img src="{{ asset('img/')."/".$room->image }}" alt="" class="rooms-img">
                         <div class="rooms-desc">
-                            <p class="title">القاعات</p>
-                            <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
-                            <a href="{{route('building-details')}}" class="btn rooms-btn">تفاصيل اكثر</a>
+                            <p class="title">{{$room->name}}</p>
+                            <p>{{$room->description}}<br><br></p>
+                            <a href="{{route('show-details',$room->id)}}" class="btn rooms-btn">تفاصيل اكثر</a>
                         </div>
                     </div>
-                    <div class="rooms-card card">
-                        <img src="{{asset("img/room2.jpg")}}" alt="" class="rooms-img">
-                        <div class="rooms-desc">
-                            <p class="title">القاعات</p>
-                            <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
-                            <a href="{{route('building-details')}}" class="btn rooms-btn">تفاصيل اكثر</a>
-                        </div>
-                    </div>
-                    <div class="rooms-card card">
-                        <img src="{{asset("img/room3.jpg")}}" alt="" class="rooms-img">
-                        <div class="rooms-desc">
-                            <p class="title">القاعات</p>
-                            <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
-                            <a href="{{route('building-details')}}" class="btn rooms-btn">تفاصيل اكثر</a>
-                        </div>
-                    </div>
-                    <div class="rooms-card card">
-                        <img src="{{asset("img/room4.jpg")}}" alt="" class="rooms-img">
-                        <div class="rooms-desc">
-                            <p class="title">القاعات</p>
-                            <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
-                            <a href="{{route('building-details')}}" class="btn rooms-btn">تفاصيل اكثر</a>
-                        </div>
-                    </div>
-                    <div class="rooms-card card ">
-                        <img src="{{asset("img/room5.jpg")}}" alt="" class="rooms-img">
-                        <div class="rooms-desc">
-                            <p class="title">القاعات</p>
-                            <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
-                            <a href="{{route('building-details')}}" class="btn rooms-btn">تفاصيل اكثر</a>
-                        </div>
-                    </div>
-                    <div class="rooms-card card">
-                        <img src="{{asset("img/IMG_9637.jpg")}}" alt="" class="rooms-img">
-                        <div class="rooms-desc">
-                            <p class="title">القاعات</p>
-                            <p> العديد من القاعات التفاعلية بمساحات مختلفة لجميع احتياجاتكم <br><br></p>
-                            <a href="{{route('building-details')}}" class="btn rooms-btn">تفاصيل اكثر</a>
-                        </div>
-                    </div>
+                    @endforeach
+         
 
                 </div>
 
