@@ -115,9 +115,9 @@ class BuildingController extends Controller
      * @param  \App\Models\Building  $building
      * @return \Illuminate\Http\Response
      */
-    public function show(Building $building)
+    public function show($building)
     {
-        $building = Building::where('id', $building)->first();
+        $building = Building::with('images')->where('id', $building)->first();
         return view('building-details', ['building' => $building]);
     }
 
