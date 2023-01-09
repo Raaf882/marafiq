@@ -37,7 +37,7 @@
                 <textarea name="desc_details" id="desc_details" cols="60" rows="6"></textarea><br><br>
                 <label for="description">وصف تفصيلي المرفق</label>
                 
-                <input type="number" id="price" name="price">
+                <input type="number" id="price" name="price" min="100" step="20">
                 <label for="price"><span>السعر</span></label>
 
                 <label>Choose Images</label>
