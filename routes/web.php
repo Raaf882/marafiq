@@ -45,7 +45,7 @@ Route::get('/show_building', [BuildingController::class, 'showBuilding'])->name(
     Route::get('/home/building-details',[BuildingController::class,'show'])->name('building-details');
 
     //----- complate the revesation
-    Route::get('/home/payment',function(){return view('payment');})->name('payment'); 
+    Route::get('/home/payment',function(){return view('payment');})->middleware('auth')->name('payment'); 
 
     // Route::get('home/show-building', [BuildingController::class, 'showBuilding'])->name('show_building');
     Route::post('/cms/store',[BuildingController::class,'store'])->name('store-data');
