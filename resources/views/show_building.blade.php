@@ -78,10 +78,13 @@
             <div class="rooms container">
                 <h1 data-aos="fade-down" data-aos-duration="1000">مرافقنا</h1>
                 <div class="rooms-cards">
-            
+                    @foreach($building ?? '' as $room)
+                    <div class="rooms-card card">
+                        <img src="{{$room->image}}" alt="" class="rooms-img">
                     @foreach($buildings as $room)
                     <div class="rooms-card card" data-aos="fade-right" data-aos-duration="1000">
                         <img src="{{ asset('img/')."/".$room->image }}" alt="" class="rooms-img">
+
                         <div class="rooms-desc">
                             <p class="title">{{$room->name}}</p>
                             <p>{{$room->description}}<br><br></p>
