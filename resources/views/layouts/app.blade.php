@@ -39,7 +39,7 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-                    {{-- <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto">
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
@@ -75,10 +75,10 @@
                     </ul> 
                 </div>
             </div>
-        </nav> --}}
+        </nav>
 
         <main class="py-4">
-            {{-- @yield('content') --}}
+            @yield('content')
         </main>
     </div>
 </body>

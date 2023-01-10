@@ -17,7 +17,7 @@
     @extends('layouts.app')
 
   
-    <section class="vh-10" style="text-align: right" >
+    <section class="vh-10 resrvation" style="text-align: right" >
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col col-xl-10">
@@ -29,7 +29,7 @@
                       alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
                   </div> --}}
                   <div class="">
-                    <div class="card-body p-4 p-lg-5 text-black">
+                    <div class="card-body form-controller p-4 p-lg-5 text-black">
                         <form action="{{route('reservation')}}" method="POST">
                             @csrf 
                             <div class="d-flex align-items-center mb-3 pb-1">
@@ -91,7 +91,7 @@
                                     <label for="allday"> صباحا 8 - 2 ظهرا</label> -->
                                   <div class="form-outline mb-4">
                                     <p class="title">السعر</p>
-                                    {{-- <span >{{ $buildings->price }}  ر.س </span> --}}
+                                    {{ $building->price }}  ر.س
                                    </div>
 
                                    <div class="form-outline mb-4">
@@ -115,6 +115,7 @@
           </div>
         </div>
     </section>
+    
     
 
 </body>

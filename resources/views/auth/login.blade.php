@@ -5,7 +5,6 @@
 
 @extends('layouts.app')
 
-@section('content')
 <section class="vh-100" style="text-align: right" >
     <div class="container py-5 h-100">
       <div class="row d-flex navbar justify-content-center align-items-center h-100">
@@ -88,4 +87,4 @@
       </div>
     </div>
   </section>
-@endsection
+

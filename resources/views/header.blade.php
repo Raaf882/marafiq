@@ -17,9 +17,10 @@
             </li>
         
         </ul> 
-        <ul class="navbar-nav ms-auto" style="display: flex; padding:0 1rem;">
+        <ul class="navbar-nav" style="display: flex; padding:0 1rem;">
             <!-- Authentication Links -->
-            @guest
+            <div style="display: flex; gap:0.5rem;">
+                @guest
                 @if (Route::has('login'))
                     <li class="nav-item">
                         <a class="btn nav-link" href="{{ route('login') }}">{{ __('دخول') }}</a>
@@ -52,6 +53,10 @@
                         </div> --}}
                 </li>
             @endguest
+
+
+            </div>
+            
         </ul>
        
     </div>

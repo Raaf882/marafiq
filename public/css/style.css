@@ -23,7 +23,9 @@
     --border-radius: 20px;
     ;
 }
-
+.resrvation{
+    padding: 2rem;
+}
 body {
     color: var(--bg-color);
     background-color: var(--body-color);
