@@ -17,7 +17,7 @@
             </li>
         
         </ul> 
-        <ul class="navbar-nav ms-auto" style="display: flex">
+        <ul class="navbar-nav ms-auto" style="display: flex; padding:0 1rem;">
             <!-- Authentication Links -->
             @guest
                 @if (Route::has('login'))

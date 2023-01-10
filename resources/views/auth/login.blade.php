@@ -8,7 +8,7 @@
 @section('content')
 <section class="vh-100" style="text-align: right" >
     <div class="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="row d-flex navbar justify-content-center align-items-center h-100">
         <div class="col col-xl-10">
           <div class="card" style="border-radius: 1rem;">
             <div class="card-header">{{ __('تسجيل الدخول') }}</div>

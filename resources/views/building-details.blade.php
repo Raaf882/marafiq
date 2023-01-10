@@ -30,7 +30,7 @@
                     
                     </div>
                 
-                    <div class="booking-content">
+                    <div class="booking-content"fin>
                         <p class="title">{{$building->name}}</p>
                         <p>{{ $building->desc_details }}</p>
                         <div class="more-content">
