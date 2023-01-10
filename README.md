@@ -1,10 +1,8 @@
-#Marafiq
+# Marafiq
 <p align="center">مرافق مشروع لادارة مرافق الجامعة ودعم صندوق الجامعة </p>
-##Our createve team
-@Rakaaan96
-@shadenll6
-@Raaf882
-@yazxx
+<p align="center">
+<image src="https://user-images.githubusercontent.com/121871724/211571328-f4ce763f-53d2-4227-9983-00719c71bae0.png"></p>
+
 
 
 
@@ -30,3 +28,34 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
+## Installation and Setup Instructions
+
+####
+
+First: Go to www or htdocs in your laptop inside the terminal of vscode.
+
+Second: Run this command to install the project: `git clone https://github.com/RaghadAlmughidi/marafiqProject.git` 
+
+Third: Go inside the folder after finish the install with this command : `cd marafiqProject`
+
+Forth: run this command: `composer install` 
+
+Fifth: copy .env.example > .env and create new database and edit all the database connection inside .env.
+
+Sixth: run this command : `php artisan migrate`
+
+Finally: Run the project in the browser
+####
+# Our createve team
+- Rahaf Mansour [@Raaf882](https://github.com/Raaf882)
+- Rakan Yahya [@Rakaaan96](https://github.com/Rakaaan96)
+- Shaden Ali [@shadenll6](https://github.com/shadenl6)
+- Yazed Abdul-allah[@yazxx](https://github.com/yazxx)
+
+## Contact 
+
+Team leader:
+Rahgad Fahad 
+- ralmughidi@gmail.com
+- GitHub [@rdmug1421](https://github.com/RaghadAlmughidi)
