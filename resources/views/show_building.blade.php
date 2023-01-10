@@ -75,13 +75,14 @@
             </div>
         </section>
         <section>
-            <div class="rooms container">
                 <h1 data-aos="fade-down" data-aos-duration="1000">مرافقنا</h1>
-                <div class="rooms-cards">
-                    @foreach($building ?? '' as $room)
-                    <div class="rooms-card card">
-                        <img src="{{$room->image}}" alt="" class="rooms-img">
+                <div class="rooms-cards" >
                     @foreach($buildings as $room)
+                    {{-- <div class="rooms-card card">
+                        
+                        <img src="{{$room->image}}" alt="" class="rooms-img">
+                    </div> --}}
+                  
                     <div class="rooms-card card" data-aos="fade-right" data-aos-duration="1000">
                         <img src="{{ asset('img/')."/".$room->image }}" alt="" class="rooms-img">
 
@@ -89,7 +90,8 @@
                             <p class="title">{{$room->name}}</p>
                             <p>{{$room->description}}<br><br></p>
                             <a href="{{route('show-details',$room->id)}}" class="btn rooms-btn">تفاصيل اكثر</a>
-                        </div>
+                        </div> 
+                       
                     </div>
                     @endforeach
          

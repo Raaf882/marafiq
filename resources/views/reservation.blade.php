@@ -91,7 +91,7 @@
                                     <label for="allday"> صباحا 8 - 2 ظهرا</label> -->
                                   <div class="form-outline mb-4">
                                     <p class="title">السعر</p>
-                                    {{ $building->price }}  ر.س
+                                    {{ $building->price,}}  ر.س
                                    </div>
 
                                    <div class="form-outline mb-4">

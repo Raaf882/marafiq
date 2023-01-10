@@ -31,7 +31,7 @@ class BuildingController extends Controller
     public function showReservation($building_id){
 
         $building = Building::where('id', $building_id)->first();
-        //$building = Building::all()->where('id')->pluck('price')->first();
+       
         return view('reservation',['building' => $building]);
 
     }
