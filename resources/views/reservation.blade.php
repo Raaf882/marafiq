@@ -14,7 +14,7 @@
     @extends('header')
 
 
-    {{-- @extends('layouts.app') --}}
+    @extends('layouts.app')
 
   
     <section class="vh-10" style="text-align: right" >
