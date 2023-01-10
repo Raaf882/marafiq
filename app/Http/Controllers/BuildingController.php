@@ -28,8 +28,11 @@ class BuildingController extends Controller
         return view ('show_building',['buildings'=>$building]);
     }
 
-    public function showReservation(){
-        return view('reservation');
+    public function showReservation(Building $building){
+
+        $building = Building::where('id', '1')->first();
+        //$building = Building::all()->where('id')->pluck('price')->first();
+        return view('reservation',['building' => $building]);
 
     }
 
@@ -45,7 +48,7 @@ class BuildingController extends Controller
         $reservation->pay_method=$request->pay_method;
 
         $reservation->save();
-        return print('ok');
+        return redirect('show_building');
     }
  
     
