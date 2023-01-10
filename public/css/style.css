@@ -75,7 +75,7 @@ header .flex {
 }
 
 p {
-    font-size: .89rem;
+    font-size: 1rem;
     color: var(--desc-color);
     font-weight: normal;
     margin-bottom: 3rem;
@@ -332,6 +332,7 @@ ul {
     border-radius: 50px;
     -webkit-transition: all 700ms ease-in;
     color: #fff;
+    cursor: pointer;
 
 }
 
@@ -453,10 +454,34 @@ footer {
         max-width: 50%;
     }
     @media(max-width:460px){
+        .navbar{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
         .title{
             font-size: 1.5rem;
         }.services-cards {
             display: grid;
             grid-template-columns: repeat(1, 1fr);}
+            .services-page--content{
+              flex-direction: column;
+            }.rooms-cards {
+           
+              grid-template-columns: repeat(1, 1fr);
+              gap: 2rem;
+          }.more-content {
+            position: relative;
+            flex-direction: column;
+          }
+          .price {
+            position:absolute;
+            right: 10px;
+            bottom: 10px;
+          }.more-content-i{
+            margin-bottom: 1rem;
+          }
+          
     }
 }

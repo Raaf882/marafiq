@@ -28,7 +28,7 @@
                     <div class="services-page--content">
                         <div class="services-page--desc">
 
-                            <p class="title"></p>
+                            <p class="title">المسرح</p>
                             <p class="desc">يستضيف المسرح احتفالاتكم وفعالياتكم بمرافق وخدمات تلبي دميع احتياجاتكم
                                 <br><span>خدمة اضافية لهذه الباقة(موقف سيارة )</span>
                             </p>
@@ -37,6 +37,23 @@
                     </div>
 
                 </div>
+                <div class="card services-page--card">
+                    <div class="services-page--img">
+                        <img src="{{asset("img/stadium1.jpg")}}" alt="">
+                    </div>
+                    <div class="services-page--content">
+                        <div class="services-page--desc">
+
+                            <p class="title">الملعب</p>
+                            <p class="desc">يتيح لكم ممارسة التمارين او الالعاب الرياضيه او اقامة الحفلات او غيرها من العروض والمناسبات في الهواء الطلق  
+                                <br><span>خدمة اضافية لهذه الباقة(موقف سيارة )</span>
+                            </p>
+                        </div>
+                        <a href="{{route('building-details')}}" class="btn">تفاصيل اكثر</a>
+                    </div>
+
+                </div>
+                
                 
             </div>
         </section>

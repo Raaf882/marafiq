@@ -29,16 +29,17 @@
                         @endforeach
                     
                     </div>
-                  
+                
                     <div class="booking-content">
                         <p class="title">{{$building->name}}</p>
                         <p>{{ $building->desc_details }}</p>
                         <div class="more-content">
                             <div class="more-content-i">
-                                <i class="ri-map-pin-fill">الموقع</i>
-                                <i class="ri-fullscreen-line">المساحة</i>
-                            </div>
-                            <a class="btn submit" href="{{route('payment')}}"> احجز الان</a>
+                                <i class="ri-map-pin-fill">الموقع </i>مبنى ج كلية الاعمال
+                                <i class="ri-fullscreen-line">المساحة</i>6M*4M
+                                
+                            </div><span class="price">{{$building->price}}ريال</span>
+                            <a class="btn submit" href="{{route('showReservation')}}"> احجز الان</a>
                         </div>
                     </div>
             

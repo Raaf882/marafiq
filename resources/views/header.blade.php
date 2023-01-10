@@ -1,4 +1,5 @@
-<header>
+
+<header style="min-width: 480px">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
     <div class="navbar container">
@@ -16,7 +17,7 @@
             </li>
         
         </ul> 
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto" style="display: flex">
             <!-- Authentication Links -->
             @guest
                 @if (Route::has('login'))
