@@ -33,12 +33,15 @@
                     <div class="booking-content">
                         <p class="title">{{$building->name}}</p>
                         <p>{{ $building->desc_details }}</p>
+
+                        <p>{{ $building->price }}  ر.س  </p>
+
                         <div class="more-content">
                             <div class="more-content-i">
                                 <i class="ri-map-pin-fill">الموقع</i>
                                 <i class="ri-fullscreen-line">المساحة</i>
                             </div>
-                            <a class="btn submit" href="{{route('payment')}}"> احجز الان</a>
+                            <a class="btn submit" href="{{route('reservation')}}"> احجز الان</a>
                         </div>
                     </div>
             

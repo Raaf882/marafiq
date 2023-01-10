@@ -57,7 +57,7 @@
                      <textarea name="desc_details" id="desc_details" cols="60" rows="6" class="form-control"></textarea>
                      </div>
                      <div class="form-outline mb-4">
-                      <label for="price" class="form-label"><span>السعر</span></label>
+                      <label for="price" class="form-label">السعر</label>
                       <input type="number" id="price" name="price" min="100" step="20"class="form-control">
                      </div>
                      <div class="form-outline mb-4">

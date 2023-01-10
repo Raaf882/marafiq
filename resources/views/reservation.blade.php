@@ -46,7 +46,8 @@
                                 <input type="radio" id="event_type" name="event_type" value="camp">
 
                                 <label class="form-label" for="cource">Cuorces</label>
-                                <input type="radio" id="event_type" name="event_type" value="cource">                            </div>
+                                <input type="radio" id="event_type" name="event_type" value="cource">    
+                                </div>
                                <div class="form-outline mb-4">
                                 <label class="form-label">وصف الحدث </label>
                                 <textarea name="description" class="form-control" id="description" cols="30" rows="3"></textarea>
@@ -90,14 +91,15 @@
                                     <label for="allday"> صباحا 8 - 2 ظهرا</label> -->
                                   <div class="form-outline mb-4">
                                     <p class="title">السعر</p>
+                                    <span >{{ $building->price }}  ر.س </span>
                                    </div>
 
                                    <div class="form-outline mb-4">
                                     <label class="title">الدفع</label>
                                     <br />
-                                      <label for="visa" class="form-label">Visa</label>
+                                      <label for="visa" class="form-label"><img src="{{asset("img/visa2.png")}}" class="logo text-sm text-gray-700 underline" alt="visa"></label>
                                       <input type="radio" class="" id="visa" name="pay_method" value="1">
-                                       <label for="mastercard" class="">  Master card</label>
+                                       <label for="mastercard" class=""><img src="{{asset("img/credit-card.png")}}" class="logo text-sm text-gray-700 underline" alt="mastercard"></label>
                                       <input type="radio" class="" id="mastercard" name="pay_method" value="0">
                                   </div>
                                   
