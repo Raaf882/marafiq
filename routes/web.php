@@ -27,7 +27,7 @@ Auth::routes();
 //Auth::routes();
 
 Route::get('/home', [BuildingController::class, 'index'])->name('home');
-Route::get('/reservation', [BuildingController::class, 'showReservation'])->name('showReservation');
+Route::get('/reservation/{id}', [BuildingController::class, 'showReservation'])->name('showReservation');
 Route::post('/reservation', [BuildingController::class, 'reservation'])->name('reservation');
 Route::get('/show_building', [BuildingController::class, 'showBuilding'])->name('show_building');
 

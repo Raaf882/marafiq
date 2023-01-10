@@ -39,7 +39,7 @@
                                 <i class="ri-fullscreen-line">المساحة</i>6M*4M
                                 
                             </div><span class="price">{{$building->price}}ريال</span>
-                            <a class="btn submit" href="{{route('showReservation')}}"> احجز الان</a>
+                            <a class="btn submit" href="{{route('showReservation', $building->id)}}"> احجز الان</a>
                         </div>
                     </div>
             
