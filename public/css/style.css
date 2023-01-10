@@ -407,81 +407,112 @@ footer {
 /*responsive */
 
 
-@media(max-width:775px){
+@media(max-width:775px) {
 
     section {
-        padding: 5rem  1rem 2rem;
-    }    .heading{
+        padding: 5rem 1rem 2rem;
+    }
+
+    .heading {
         font-size: 4rem;
     }
-    .home-img{
+
+    .home-img {
         width: 40%;
     }
 
 }
-@media(max-width:635px){
-    .heading{
-        font-size:2rem ;
+
+@media(max-width:635px) {
+    .heading {
+        font-size: 2rem;
     }
-    .home{
+
+    .home {
         flex-direction: column;
     }
-    .home-content{
+
+    .home-content {
         width: 100%;
         order: 2;
     }
-    .home-img{
+
+    .home-img {
         width: 80%;
         order: 1;
-    }.home-img img{
+    }
+
+    .home-img img {
         padding: 1rem;
     }
-    section{
+
+    section {
         padding: 5rem 1rem 3rem;
 
     }
+
     .container {
         max-width: 100%;
         margin: auto;
         width: 100%;
-    }.aboutUs{
-    
     }
-   
-    h1{
+
+    .aboutUs {}
+
+    h1 {
         font-size: 2rem;
-    }.video-card{
+    }
+
+    .video-card {
         max-width: 50%;
     }
-    @media(max-width:460px){
-        .navbar{
+
+    @media(max-width:460px) {
+        header {
+            min-width: 480px;
+        }
+
+        .navbar {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
         }
-        .title{
+
+        .title {
             font-size: 1.5rem;
-        }.services-cards {
+        }
+
+        .services-cards {
             display: grid;
-            grid-template-columns: repeat(1, 1fr);}
-            .services-page--content{
-              flex-direction: column;
-            }.rooms-cards {
-           
-              grid-template-columns: repeat(1, 1fr);
-              gap: 2rem;
-          }.more-content {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .services-page--content {
+            flex-direction: column;
+        }
+
+        .rooms-cards {
+
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+        }
+
+        .more-content {
             position: relative;
             flex-direction: column;
-          }
-          .price {
-            position:absolute;
+            gap: 0;
+        }
+
+        .price {
+            position: absolute;
             right: 10px;
             bottom: 10px;
-          }.more-content-i{
+        }
+
+        .more-content-i {
             margin-bottom: 1rem;
-          }
-          
+        }
+
     }
 }
