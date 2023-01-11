@@ -1,20 +1,23 @@
-<header>
+
+<header style="min-width: 480px">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
     <div class="navbar container">
         
         <a href="{{ url('/home') }}" class="logo text-sm text-gray-700 underline"> <img src="{{asset("img/logo.png")}}" alt="logo"></a>
+        
+        
         <ul>
             <li>
                 <a class="nav-item" href="{{route('home')}}">الرئيسية</a>
             </li>
         
             <li>
-                <a class="nav-item" href="{{url('/show_building')}}">عرض المرافق</a>
+                <a class="nav-item" href="{{ route('show_building') }}">عرض المرافق</a>
             </li>
         
         </ul> 
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto" style="display: flex; padding:0 1rem;">
             <!-- Authentication Links -->
             @guest
                 @if (Route::has('login'))
@@ -40,11 +43,13 @@
                                          document.getElementById('logout-form').submit();">
                             {{ __('خروج') }}
                         </a>
-
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="btn d-none">
                             @csrf
                         </form>
                     </div>
+                    {{-- <div class="" aria-labelledby="">
+                            <a href="{{route ('cms')}}" class="btn"> إنشاء مرفق</a> 
+                        </div> --}}
                 </li>
             @endguest
         </ul>

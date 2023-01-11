@@ -22,12 +22,12 @@
         <section id="home" style="background-color: #FAFBFA;">
             <div class=" home container">
 
-                <div class="home-content" data-aos="fade-down" data-aos-duration="2000">
+                <div class="home-content" data-aos="fade-left" data-aos-duration="1000">
                     <h1 class="heading">مرافق للتأجير </h1>
                     <p class="title"><b>مساحات </b>استثنائية-لفعاليات حصرية </p>
-                    <a class="btn hover submit" href="{{url ('/show_building')}}"> احجز الان</a>
+                    <a class="btn hover submit" href="{{ route('show_building') }}"> احجز الان</a>
                 </div>
-                <div class="home-img" data-aos="fade-up" data-aos-duration="2000">
+                <div class="home-img" data-aos="fade-right" data-aos-duration="2000">
                     <img src="img/home-img.png" alt="home image">
                 </div>
             </div>
@@ -43,7 +43,7 @@
                     <p>نقدم العديد من المرافق المتنوعة والحديثة المتاحة للحجز والاستئجار اصنعوا مساحاتكم هنا حيث نضمن
                         راحتكم مع العديد من الخدمات </p>
 
-                    <a class="btn hover submit" href="{{url ('/show_building')}}"> احجز الان</a>
+                    <a class="btn hover submit" href="{{ route('show_building') }}"> احجز الان</a>
                 </div>
                 <div class="video-card card" data-aos="fade-up-right" data-aos-duration="2000">
                     <img src="/img/logo.png" alt="">
@@ -61,16 +61,16 @@
                     </div>
                     <div class="service-card card"  data-aos="fade-up" data-aos-duration="2000">
                         <i class="ri-lightbulb-flash-line"></i>
-                        <p>مرافق عالمية وملاعب</p>
+                        <p>قاعات للدورات</p>
                     </div>
                     <div class="service-card card"  data-aos="fade-up" data-aos-duration="2000">
                         <i class="i-s ri-lightbulb-flash-line"></i>
-                        <p><b>مرافق عالمية وملاعب</b> </p>
+                        <p><b>خدمات مميزة</b> </p>
                     </div>
                 </div>
                 <p class="title"data-aos="fade-up"data-aos-duration="3000">مرافق عالمية لأفكار استثنائية</p>
             
-                <a class="btn submit" href="{{url('/show_building')}}"> احجز الان</a>
+                <a class="btn submit" href="{{ route('show_building') }}"> احجز الان</a>
             </div>
         </section>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

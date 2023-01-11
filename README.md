@@ -1,3 +1,11 @@
+# Marafiq
+<p align="center">مرافق مشروع لادارة مرافق الجامعة ودعم صندوق الجامعة </p>
+<p align="center">
+<image src="https://user-images.githubusercontent.com/121871724/211571328-f4ce763f-53d2-4227-9983-00719c71bae0.png"></p>
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
@@ -21,41 +29,33 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Installation and Setup Instructions
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+####
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+First: Go to www or htdocs in your laptop inside the terminal of vscode.
 
-## Laravel Sponsors
+Second: Run this command to install the project: `git clone https://github.com/RaghadAlmughidi/marafiqProject.git` 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Third: Go inside the folder after finish the install with this command : `cd marafiqProject`
 
-### Premium Partners
+Forth: run this command: `composer install` 
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
+Fifth: copy .env.example > .env and create new database and edit all the database connection inside .env.
 
-## Contributing
+Sixth: run this command : `php artisan migrate`
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Finally: Run the project in the browser
+####
+# Our createve team
+- Rahaf Mansour [@Raaf882](https://github.com/Raaf882)
+- Rakan Yahya [@Rakaaan96](https://github.com/Rakaaan96)
+- Shaden Ali [@shadenll6](https://github.com/shadenl6)
+- Yazed Abdul-allah[@yazxx](https://github.com/yazxx)
 
-## Code of Conduct
+## Contact 
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Team leader:
+Rahgad Fahad 
+- ralmughidi@gmail.com
+- GitHub [@rdmug1421](https://github.com/RaghadAlmughidi)
