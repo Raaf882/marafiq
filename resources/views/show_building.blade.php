@@ -58,7 +58,7 @@
             <div class="rooms container">
                 <h1>مرافقنا</h1>
                 <div class="rooms-cards">
-                    @foreach($building as $room)
+                    @foreach($building ?? '' as $room)
                     <div class="rooms-card card">
                         <img src="{{$room->image}}" alt="" class="rooms-img">
                         <div class="rooms-desc">
