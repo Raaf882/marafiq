@@ -104,7 +104,8 @@
                                   </div>
                                   
                                   <button class="btn btn-primary btn btn-white btn-lg btn-block"
-                                   style="color:white; background-color: #198754" type="submit">حجز</button>
+                                   style="color:white; background-color: #198754" type="submit" >حجز</button>
+                                   
                           </form>
               
                     </div>
